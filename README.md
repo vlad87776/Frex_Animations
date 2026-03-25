@@ -1,54 +1,44 @@
 # Frex Animation's
 
-Репозиторий подготовлен для двух направлений:
-- **JE (Java Edition): Minecraft 1.20.1 + Forge**
-- **PE/Bedrock: Minecraft 1.21.131.1+**
+Проект для двух версий Minecraft:
+- JE: Minecraft 1.20.1 + Forge
+- PE/Bedrock: Minecraft 1.21.131.1+
 
-## Структура
+## Файлы JE (Forge)
+- build.gradle
+- gradle.properties
+- settings.gradle
+- src/main/java/com/frexanimations/FrexAnimationsMod.java
+- src/main/resources/META-INF/mods.toml
+- src/main/resources/pack.mcmeta
 
-```text
-.
-├── build.gradle
-├── gradle.properties
-├── settings.gradle
-├── src/main/java/com/frexanimations/FrexAnimationsMod.java
-├── src/main/resources/META-INF/mods.toml
-├── src/main/resources/pack.mcmeta
-├── pe/
-│   ├── behavior_pack/
-│   └── resource_pack/
-└── scripts/bootstrap-termux.sh
-```
+## Файлы PE (Bedrock)
+- pe/behavior_pack/
+- pe/resource_pack/
 
-## JE (Forge 1.20.1)
-
-### Termux / Android 15 (JDK 21)
+## Запуск в Termux (Android 15)
 ```bash
 pkg update && pkg upgrade -y
 pkg install -y openjdk-21 gradle git
-
 export JAVA_HOME=$PREFIX/lib/jvm/openjdk-21
 export PATH=$JAVA_HOME/bin:$PATH
-
 ./scripts/bootstrap-termux.sh
 ./gradlew build
 ```
 
-## PE (Bedrock 1.21.131.1+)
-
-- `pe/behavior_pack` — Behavior Pack
-- `pe/resource_pack` — Resource Pack
-
-Установка:
+## Установка PE-паков
 1. Скопировать `pe/behavior_pack` в `behavior_packs`.
 2. Скопировать `pe/resource_pack` в `resource_packs`.
 3. Включить оба пака в мире.
+4. Проверка: `/function frex_hello`
 
-Проверка:
-```mcfunction
-/function frex_hello
+## Важно
+Перед публикацией проверь, что в файлах нет merge conflict маркеров:
+- `<<<<<<<`
+- `=======`
+- `>>>>>>>`
+
+Проверка командой:
+```bash
+rg -n "^<<<<<<<|^=======|^>>>>>>>" -g'*'
 ```
-
-## Идентификаторы
-- Название проекта: **Frex Animation's**
-- JE mod id: `frex_animations`
