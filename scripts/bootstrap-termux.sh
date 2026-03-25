@@ -11,4 +11,4 @@ if [ ! -f "gradlew" ]; then
   gradle wrapper --gradle-version 8.10.2
 fi
 
-echo "Готово. Можно запускать: ./gradlew build"
+echo "Готово. JE: Forge 1.20.1, PE: 1.21.131.1+"
