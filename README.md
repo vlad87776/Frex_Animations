@@ -1,5 +1,6 @@
 # Frex Animation's
 
+
 Проект для двух версий Minecraft:
 - JE: Minecraft 1.20.1 + Forge
 - PE/Bedrock: Minecraft 1.21.131.1+
@@ -42,3 +43,16 @@ export PATH=$JAVA_HOME/bin:$PATH
 ```bash
 rg -n "^<<<<<<<|^=======|^>>>>>>>" -g'*'
 ```
+
+Стартовый репозиторий для разработки Minecraft-мода **Frex Animation's** под **Termux (Android 15)** с **JDK 21**.
+
+## Что внутри
+- Шаблон Fabric-мода (Java 21)
+- Базовый класс инициализации мода
+- Конфиги Gradle/Fabric Loom
+- `.gitignore` для Android/Termux и Java/Gradle
+
+## Важно
+- Имя мода в игре: **Frex Animation's**
+- Идентификатор мода (mod id): `frex_animations`
+

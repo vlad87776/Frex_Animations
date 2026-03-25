@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "frex_animations",
+  "version": "${version}",
+  "name": "Frex Animation's",
+  "description": "Кастомный мод для проекта Frex Animation's.",
+  "authors": [
+    "Frex"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/frex_animations/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.frexanimations.FrexAnimationsMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
