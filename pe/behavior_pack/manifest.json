@@ -5,7 +5,7 @@
     "description": "Behavior Pack для Frex Animation's (PE/Bedrock)",
     "uuid": "9f2f45fa-2ec7-4d0e-bcd3-e2dbd7264a7a",
     "version": [0, 1, 0],
-    "min_engine_version": [1, 21, 0]
+    "min_engine_version": [1, 21, 131]
   },
   "modules": [
     {

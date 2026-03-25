@@ -5,7 +5,7 @@
     "description": "Resource Pack для Frex Animation's (PE/Bedrock)",
     "uuid": "7246dcff-a7a8-458c-a472-c9ca7945f654",
     "version": [0, 1, 0],
-    "min_engine_version": [1, 21, 0]
+    "min_engine_version": [1, 21, 131]
   },
   "modules": [
     {

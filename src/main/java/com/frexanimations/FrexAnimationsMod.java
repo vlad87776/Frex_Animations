@@ -1,15 +1,15 @@
 package com.frexanimations;
 
-import net.fabricmc.api.ModInitializer;
+import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class FrexAnimationsMod implements ModInitializer {
+@Mod(FrexAnimationsMod.MOD_ID)
+public class FrexAnimationsMod {
     public static final String MOD_ID = "frex_animations";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    @Override
-    public void onInitialize() {
-        LOGGER.info("Frex Animation's загружен!");
+    public FrexAnimationsMod() {
+        LOGGER.info("Frex Animation's (Forge 1.20.1) loaded");
     }
 }

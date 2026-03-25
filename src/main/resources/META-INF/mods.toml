@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="frex_animations"
+version="${file.jarVersion}"
+displayName="Frex Animation's"
+authors="Frex"
+description='''
+Frex Animation's mod for Minecraft JE 1.20.1 (Forge).
+'''
