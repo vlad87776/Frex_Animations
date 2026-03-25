@@ -1,0 +1,20 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Frex Animation's RP",
+    "description": "Resource Pack для Frex Animation's (PE/Bedrock)",
+    "uuid": "7246dcff-a7a8-458c-a472-c9ca7945f654",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 21, 131]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "cb24fcb7-df81-4ec0-a7dc-0f9b9264ad92",
+      "version": [0, 1, 0]
+    }
+  ],
+  "metadata": {
+    "authors": ["Frex"]
+  }
+}
